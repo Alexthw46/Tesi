@@ -11,9 +11,9 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, Subset
 from tqdm import tqdm
 
-from dataset.data_utils import get_dataset
+from src.dataset.data_utils import get_dataset
 from src.inference_val import get_template
-from models.L2CLIP import CLIPWithL2P
+from src.models.L2CLIP import CLIPWithL2P
 from src.chils_eval import run_chils
 from src.utils.labelsets_utils import get_true_cifar20_labelset, load_label_set
 

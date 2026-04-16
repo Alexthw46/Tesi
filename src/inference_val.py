@@ -10,9 +10,9 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from chils_eval import run_chils
-from dataset.data_utils import get_dataset
+from src.dataset.data_utils import get_dataset
 from src.utils.labelsets_utils import get_true_cifar20_labelset, load_label_set
-from models.L2CLIP import CLIPWithL2P
+from src.models.L2CLIP import CLIPWithL2P
 
 
 def get_classnames(dataset):

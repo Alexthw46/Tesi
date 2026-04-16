@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import clip
 from typing import Union, Sequence
 
-from models.L2P import Prompt
+from src.models.L2P import Prompt
 
 class CLIPWithL2P(nn.Module):
     def __init__(self, device, classnames, template: Union[str, Sequence[str]], clip_model="ViT-B/16", prompt_lenght=5, prompt_pool_size=20):

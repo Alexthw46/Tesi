@@ -1,4 +1,3 @@
-# run_no_hydra.py
 import os
 from tqdm import tqdm
 import clip
@@ -6,9 +5,9 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 
-from dataset.data_utils import get_dataset
+from src.dataset.data_utils import get_dataset
 from inference_val import get_template
-from models.L2CLIP import CLIPWithL2P
+from src.models.L2CLIP import CLIPWithL2P
 
 # ---- User settings (replace paths / names as needed) ----
 data_dir = "../data"
