@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 
 from src.dataset.data_utils import get_dataset
-from inference_val import get_template
+from src.inference_val import get_template
 from src.models.L2CLIP import CLIPWithL2P
 
 # ---- User settings (replace paths / names as needed) ----
@@ -16,7 +16,7 @@ arch = "L2Clip"
 clip_model = "ViT-B/16"
 batch_size = 64
 work_dir = ".."
-epochs = 5
+epochs = 10
 lr = 1e-3
 weight_decay = 1e-6
 num_workers = 6
